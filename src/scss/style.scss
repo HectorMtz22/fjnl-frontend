@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --c1: #f2b807;
+  --c1-dark: #0f0f0f;
+  --c1-dark-alpha: #0f0f0faa;
+  --shadow: #555;
+}
+
+::-moz-selection {
+  color: #1c1c1c;
+  background: var(--c1);
+}
+::selection {
+  color: rgb(255, 255, 255);
+  background: var(--c1);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--c1);
+  border-radius: 3px;
+}
+
+body {
+  background: #1c1c1c;
+  color: #f2f2f2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cabin", sans-serif;
+  color: var(--c1);
+}
+
+a,
+ul,
+li {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+//Global Variables on SCSS
+$boxShadow: 0px 0px 15px var(--shadow);
+$transition: all 400ms ease;
+
+@import "concerts";
+@import "contact";
+@import "gallery";
+@import "header";
+@import "notices";
+@import "footer";
