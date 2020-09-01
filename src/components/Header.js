@@ -8,7 +8,7 @@ const Header = () => {
   useEffect(() => {
     function listener() {
       let scroll = window.scrollY;
-      scroll > 200 ? setScrolled(" header_scrolled") : setScrolled("");
+      scroll > 0 ? setScrolled(" header_scrolled") : setScrolled("");
     }
     window.addEventListener("scroll", listener, { passive: true });
     return () => {
@@ -29,9 +29,9 @@ const Header = () => {
     return (
       <header className={`header_desktop ${scrolled}`}>
         <div>
-          <a href="/">
-            <img src="icon.png" alt="LOGO" />
-          </a>
+          <Link to="/">
+            <img src="/icon.png" alt="Logo" />
+          </Link>
           <h1>
             Filarmónica Juvenil <br /> de Nuevo León
           </h1>
@@ -42,13 +42,13 @@ const Header = () => {
           </button>
           <aside className="navhidden">
             <li>
-              <a href="/concerts">Conciertos</a>
+              <Link to="/concerts">Conciertos</Link>
             </li>
             <li>
-              <a href="/gallery">Fotos</a>
+              <Link to="/gallery">Fotos</Link>
             </li>
             <li>
-              <a href="/contact">Contacto</a>
+              <Link to="/contact">Contacto</Link>
             </li>
           </aside>
         </nav>

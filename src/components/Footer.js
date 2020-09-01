@@ -6,7 +6,10 @@ const Footer = () => {
   if (isBrowser) {
     return (
       <footer className="footer_desktop">
-        <p>&copy; 2020. Todos los derechos reservados</p>
+        <p>
+          <a href="https://hectormtz22.github.io/">Made by: HMtzdev </a>
+          &copy; 2020
+        </p>
       </footer>
     );
   } else {

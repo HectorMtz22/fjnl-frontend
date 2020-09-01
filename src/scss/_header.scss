@@ -15,6 +15,7 @@ header {
 .header_desktop {
   padding: 2px 10%;
   grid-template-columns: 1fr 100px;
+  opacity: 0.7;
   transform-origin: top;
   transition: $transition;
   & div {
@@ -72,6 +73,7 @@ header {
 }
 
 .header_scrolled {
+  opacity: 1;
   transform: translateY(-40px);
   & div {
     transform: scale(0.7);

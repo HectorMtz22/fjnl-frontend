@@ -1,7 +1,6 @@
 .banner {
   display: block;
-  height: 80vh;
-  position: relative;
+  height: 85vh;
   &::before {
     content: "";
     display: block;
@@ -11,6 +10,7 @@
     right: 0;
     bottom: 0;
     background: var(--c1-dark-alpha);
+    z-index: 1;
   }
   & h1 {
     text-align: center;
@@ -18,6 +18,17 @@
     top: 50%;
     left: 0;
     right: 0;
+    z-index: 2;
+  }
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
   }
 }
 
@@ -27,7 +38,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
   overflow: hidden;
   & img {
     position: absolute;

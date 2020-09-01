@@ -6,11 +6,12 @@ export default function Notices() {
     <main className="main">
       <main className="banner">
         <h1>Nueva Normalidad</h1>
+        <img src="/img/notices/back.jpg" className="background" alt="" />
         <main className="img_scrolling">
-          <img src="/img/notices/banner2.jpg" className="img_slides" alt="" />
           <img src="/img/notices/banner1.jpg" className="img_slides" alt="" />
+          <img src="/img/notices/banner2.jpg" className="img_slides" alt="" />
           <img src="/img/notices/banner3.jpg" className="img_slides" alt="" />
-          <img src="/img/notices/banner4.jpg" className="img_slides" alt="" />
+          <img src="/img/notices/banner4_1.jpg" className="img_slides" alt="" />
           <img src="/img/notices/banner5.jpg" className="img_slides" alt="" />
         </main>
       </main>
